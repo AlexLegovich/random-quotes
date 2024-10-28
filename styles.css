@@ -39,6 +39,24 @@ body {
   color: white;
 }
 
+.author-avatar {
+  display: none;
+  transform-origin: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+.visible {
+  display: inline-block;
+}
+
 .quote {
   font-size: 1.2em;
 }
