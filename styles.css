@@ -81,21 +81,25 @@ body {
 .favorite-card {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
-  color: darkslategray;
-  padding: 10px 20px;
+  background-color: #1f1f1f;
+  color: rgb(236, 236, 236);
+  padding: 20px 20px;
   margin: 10px;
   border-radius: 8px;
   width: 25%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
 }
 
 .favorite-card-content {
-  flex: 1;
+  flex: 1 1 auto;
   padding: 0px 3px;
 }
 
 .favorite-card-author {
   font-style: italic;
+  padding: 0;
+  margin: 0;
 }
 
 .star-icon {
@@ -103,4 +107,24 @@ body {
   color: yellow;
   vertical-align: middle;
   cursor: pointer;
+}
+
+.star-icon.selected {
+  font-size: 30px;
+  color: yellow;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#quote-favorite-btn{
+display: none;
+}
+
+.author-card-avatar{
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 1px solid white;
 }
