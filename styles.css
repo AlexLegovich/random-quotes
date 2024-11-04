@@ -102,19 +102,15 @@ body {
   margin: 0;
 }
 
-.star-icon {
+.heart-icon {
   font-size: 30px;
-  color: yellow;
+  color: rgb(245, 21, 21);
   vertical-align: middle;
   cursor: pointer;
 }
 
-.star-icon.selected {
-  font-size: 30px;
-  color: yellow;
-  vertical-align: middle;
-  cursor: pointer;
-}
+
+
 
 #quote-favorite-btn{
 display: none;
