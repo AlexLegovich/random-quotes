@@ -5,6 +5,8 @@ import {
   toggleFavoriteIcon,
 } from './src/favoritesHandler.js'
 
+import { generateRandomInt } from './src/utils.js'
+
 const quoteElement = document.getElementById('quote-text')
 const generateBtn = document.getElementById('random-quote-btn')
 const quoteAuthor = document.getElementById('quote-author')
@@ -15,8 +17,9 @@ const favoritesContainer = document.getElementById('favorites-container')
 let currentQuoteIndex
 
 function generateRandomQuote() {
-  currentQuoteIndex = Math.floor(Math.random() * quotes.length)
-  const randomQuote = quotes[currentQuoteIndex]
+  const randomIndex = generateRandomInt(quotes.length)
+  const randomQuote = quotes[randomIndex]
+  currentQuoteIndex = randomIndex
   quoteElement.textContent = `"${randomQuote.quote}"`
   quoteAuthor.textContent = randomQuote.author
   authorAvatar.classList.add('visible')
