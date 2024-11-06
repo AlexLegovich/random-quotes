@@ -88,7 +88,6 @@ body {
   border-radius: 8px;
   width: 25%;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
 }
 
 .favorite-card-content {
@@ -109,14 +108,7 @@ body {
   cursor: pointer;
 }
 
-
-
-
-#quote-favorite-btn{
-display: none;
-}
-
-.author-card-avatar{
+.author-card-avatar {
   width: 54px;
   height: 54px;
   border-radius: 50%;
