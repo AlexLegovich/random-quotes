@@ -1,19 +1,13 @@
-import { currentQuote } from '../../index.js'
+import { favoriteBtn } from '../../index.js'
 
-const favoritesContainer = document.getElementById('favorites-container')
-const favoriteBtn = document.getElementById('favorite-btn')
-favoriteBtn.addEventListener('click', () =>
-  toggleFavorite(currentQuote, favoriteBtn, favoritesContainer)
-)
 
-hideBtn(favoriteBtn)
 
 function toggleFavorite(quote, btn, container) {
   quote.isFavorite = !quote.isFavorite
   const { text, author, image, isFavorite } = quote
   toggleFavoriteBtnIcon(isFavorite, btn)
 
-  if (currentQuote.isFavorite) {
+  if (quote.isFavorite) {
     showFavoriteCard(text, author, image, container)
   } else {
     hideFavoriteCard(text)
@@ -21,7 +15,7 @@ function toggleFavorite(quote, btn, container) {
 }
 
 function handleFavorite(isFavorite) {
-  showBtn(favoriteBtn)
+  showFavoriteBtn(favoriteBtn)
   toggleFavoriteBtnIcon(isFavorite, favoriteBtn)
 }
 
@@ -30,11 +24,11 @@ function toggleFavoriteBtnIcon(isFavorite, el) {
   el.classList.toggle('fa-regular', !isFavorite)
 }
 
-function showBtn(btn) {
+function showFavoriteBtn(btn) {
   btn.style.display = 'inline-block'
 }
 
-function hideBtn(btn) {
+function hideFavoriteBtn(btn) {
   btn.style.display = 'none'
 }
 
@@ -56,4 +50,4 @@ function hideFavoriteCard(quote) {
   })
 }
 
-export { handleFavorite }
+export { handleFavorite, toggleFavorite, hideFavoriteBtn }
