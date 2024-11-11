@@ -1,5 +1,6 @@
 const quotes = [
   {
+    id: 'c718475e',
     text: 'In the middle of difficulty lies opportunity',
     author: 'Albert Einstein',
     image:
@@ -7,6 +8,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '3452d8aa',
     text: 'Do not go where the path may lead, go instead where there is no path and leave a trail',
     author: 'Ralph Waldo Emerson',
     image:
@@ -14,6 +16,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '56487b49',
     text: 'Success is not final, failure is not fatal: It is the courage to continue that counts',
     author: 'Winston Churchill',
     image:
@@ -21,6 +24,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '1e3736f8',
     text: 'The only limit to our realization of tomorrow is our doubts of today',
     author: 'Franklin D. Roosevelt',
     image:
@@ -28,6 +32,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '2520d4da',
     text: 'The future belongs to those who believe in the beauty of their dreams',
     author: 'Eleanor Roosevelt',
     image:
@@ -35,12 +40,14 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '0446d47e',
     text: 'Life is what happens when you’re busy making other plans',
     author: 'John Lennon',
     image: 'https://www.songhall.org/images/uploads/exhibits/John_Lennon.jpg',
     isFavorite: false,
   },
   {
+    id: 'ea08d995',
     text: 'It is never too late to be what you might have been',
     author: 'George Eliot',
     image:
@@ -48,6 +55,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '9ac6bee8',
     text: 'Not everything that is faced can be changed, but nothing can be changed until it is faced',
     author: 'James Baldwin',
     image:
@@ -55,6 +63,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '05370aeb',
     text: 'The best way to predict the future is to create it',
     author: 'Peter Drucker',
     image:
@@ -62,6 +71,7 @@ const quotes = [
     isFavorite: false,
   },
   {
+    id: '423c35bb',
     text: 'You miss 100% of the shots you don’t take',
     author: 'Wayne Gretzky',
     image:
