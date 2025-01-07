@@ -77,6 +77,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width: 767.98px){
+  .favorites-container{
+    flex-direction: column;
+  }
+}
 
 .favorite-card {
   display: flex;
@@ -89,7 +94,11 @@ body {
   width: 25%;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-
+@media (max-width: 767.98px){
+  .favorite-card{
+    width: auto;
+  }
+}
 .favorite-card-content {
   flex: 1 1 auto;
   padding: 0px 3px;
@@ -99,6 +108,8 @@ body {
   font-style: italic;
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
+  flex-grow: 1;
 }
 
 .heart-icon {
@@ -115,4 +126,21 @@ body {
   object-fit: cover;
   display: block;
   border: 1px solid white;
+}
+
+.btn-danger {
+  background-color: #181717;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  min-height: 2.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: all 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #ff7a7a;
+  color: #222222;
 }

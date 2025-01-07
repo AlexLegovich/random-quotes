@@ -8,12 +8,15 @@ function handleQuote(quotes, setCurrentQuote) {
 }
 
 function displayQuote(quote) {
-  const { text, author, image, isFavorite } = quote
-  const quoteElement = document.getElementById('quote-text')
-  const quoteAuthor = document.getElementById('quote-author')
+  const {id, text, author, image, isFavorite } = quote
+  const quoteElement = document.getElementById('quote')
+  const quoteTextElement = document.getElementById('quote-text')
+  const quoteAuthorElement = document.getElementById('quote-author')
   const authorAvatar = document.querySelector('.author-avatar')
-  quoteElement.textContent = `"${text}"`
-  quoteAuthor.textContent = author
+  // Current quote will have data-current-quote-id HTML attribute
+  quoteElement.dataset.currentQuoteId = id 
+  quoteTextElement.textContent = `"${text}"`
+  quoteAuthorElement.textContent = author
   authorAvatar.classList.add('visible')
   authorAvatar.src = image
   handleFavorite(isFavorite)
